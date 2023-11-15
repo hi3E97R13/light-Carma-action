@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     public Animator anim;
 
     public float speed = 4;
-    public float rotSpeed = 90;
+    public float rotSpeed = 9090;
     public float rot = 0f;
     public float gravity = 8;
     public bool running = false;
@@ -55,7 +55,7 @@ public class Movement : MonoBehaviour
                 moveDir = transform.TransformDirection(moveDir);
             } else {
                 anim.SetInteger("jump", 0);
-                rotSpeed = 90;
+                rotSpeed = 600;
                 speed = 4;
             }
 
