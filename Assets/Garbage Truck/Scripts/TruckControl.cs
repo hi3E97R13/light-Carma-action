@@ -35,8 +35,8 @@ public class TruckControl : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		float motor = maxMotorTorque * Input.GetAxis ("Vertical");
-		float steering = maxSteeringAngle * Input.GetAxis ("Horizontal");
+		float motor = maxMotorTorque * Input.GetAxis ("Vertical2");
+		float steering = maxSteeringAngle * Input.GetAxis ("Horizontal2");
 		for (int i = 0; i < axleInfos.Count; i++)
 		{
 			if (axleInfos [i].steering)
